@@ -29,7 +29,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 
 
 #loading dataset
-data = pd.read_csv("C:/PYDATAFILES/SENTIMENT_ANALYSIS.csv",  encoding="latin1")
+data = pd.read_csv("SENTIMENT_ANALYSIS.csv",  encoding="latin1")
 data.head()
 
 # Drop unnecessary columns
