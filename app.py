@@ -4,6 +4,7 @@ import pandas as pd
 import re
 import tensorflow as tf
 from tensorflow import keras
+nltk.download('stopwords')
 import nltk
 import string
 from nltk.corpus import stopwords
