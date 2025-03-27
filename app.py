@@ -99,6 +99,11 @@ def preprocess_text(text):
 #Apply Preprocessing to the Dataset
 data['Comments'] = data['Comments'].apply(preprocess_text)
 
+import nltk
+nltk.download('vader_lexicon')
+
+from nltk.sentiment import SentimentIntensityAnalyzer
+sid = SentimentIntensityAnalyzer()
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 # Initialize VADER sentiment analyzer
 sid = SentimentIntensityAnalyzer()
