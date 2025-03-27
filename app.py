@@ -4,8 +4,8 @@ import pandas as pd
 import re
 import tensorflow as tf
 from tensorflow import keras
-nltk.download('stopwords')
 import nltk
+nltk.download('stopwords')
 import string
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
