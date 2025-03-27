@@ -246,12 +246,18 @@ if uploaded_file is not None:
     text_column = st.selectbox("Select the column containing text data:", df.columns)
 
     if st.button("Analyze Sentiment"):
+        if df[text_column].isna().all():
+            st.error("The selected column contains only missing values. Please choose a valid text column.")
+        else:
+        # Fill missing values with an empty string to avoid errors
+            df[text_column] = df[text_column].fillna("")
+
         # Predict sentiment for each text entry
-        df["sentiment"] = df[text_column].astype(str).apply(get_sentiment)
+            df["sentiment"] = df[text_column].astype(str).apply(get_sentiment)
 
         # Display results
-        st.write("### Predictions")
-        st.write(df)
+            st.write("### Predictions")
+            st.write(df)
 
         # Allow user to download the results
         output_file = "sentiment_predictions.xlsx" if file_extension == "xlsx" else "sentiment_predictions.csv"
