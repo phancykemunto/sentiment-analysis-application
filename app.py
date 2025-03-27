@@ -217,7 +217,8 @@ bilstm_model.save("sentiment_model.h5")  # Saves the model as an HDF5 file
 
 from tensorflow.keras.models import load_model
 
-bilstm_model = load_model("sentiment_model.h5")
+from keras.models import load_model
+bilstm_model = load_model("sentiment_model.h5", compile=False)
 
 
 
