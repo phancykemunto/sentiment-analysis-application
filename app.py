@@ -5,7 +5,11 @@ import re
 import tensorflow as tf
 from tensorflow import keras
 import nltk
-nltk.download('stopwords')
+import os
+nltk_data_path = os.path.expanduser('~/nltk_data/corpora/stopwords')
+if not os.path.exists(nltk_data_path):
+    nltk.download('stopwords')
+#nltk.download('stopwords')
 import string
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
