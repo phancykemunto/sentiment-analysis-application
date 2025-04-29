@@ -113,20 +113,20 @@ A WordCloud was generated to visualize the most common terms in the user reviews
 ### 📈 Sentiment Distribution
 This plot shows the distribution of sentiments (Positive, Negative, Neutral) generated using VADER, which were used to label data for training the models.
 
-![Sentiment Distribution](sentiment_distribution.png)
+![Sentiment Distribution](sentimentdistribution.png)
 
 ---
 
 ### 🧠 BiLSTM Model Output
 Below is a sample output from the **BiLSTM model**, which had the highest performance among the models evaluated. The model successfully predicts the sentiment label based on the review input.
 
-![BiLSTM Output](BILSTM.png)
+![BiLSTM Output](bilstm.png)
 
 ---
 
 ### 🌐 Web Application Interface
 The trained model was deployed using **Flask** with an interactive web interface. Users can input a review and get real-time sentiment prediction.
 
-![Web Interface](images/web_interface.png)
+![Web Interface](webinterface.png)
 
   
