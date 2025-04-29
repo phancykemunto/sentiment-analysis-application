@@ -120,7 +120,7 @@ This plot shows the distribution of sentiments (Positive, Negative, Neutral) gen
 ### 🧠 BiLSTM Model Output
 Below is a sample output from the **BiLSTM model**, which had the highest performance among the models evaluated. The model successfully predicts the sentiment label based on the review input.
 
-![BiLSTM Output](bilstm.jpg)
+![BiLSTM Output](bilstm_model.PNG)
 
 ---
 
