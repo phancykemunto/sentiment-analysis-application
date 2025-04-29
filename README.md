@@ -75,8 +75,10 @@ analyzer = SentimentIntensityAnalyzer()
 text = "This app is amazing and super user-friendly!"
 score = analyzer.polarity_scores(text)
 print(score)
-# Output: {'neg': 0.0, 'neu': 0.254, 'pos': 0.746, 'compound': 0.8519}
+# Output: {'neg': 0.0, 'neu': 0.254, 'pos': 0.746, 'compound': 0.8519} 
 ---
+
+``` 
 
 ## ⚙️ Tools & Technologies
 
@@ -101,9 +103,30 @@ print(score)
 
 ## 📸 Visualizations
 
-> Include screenshots of confusion matrix, accuracy/loss plots, sentiment distribution, etc.  
-*(You can add images like this after uploading them to GitHub)*
+### ☁️ Word Cloud of Most Frequent Words
+A WordCloud was generated to visualize the most common terms in the user reviews. This helps identify key themes and sentiments expressed by users.
 
-```markdown
-![Model Accuracy](images/model_accuracy.png)
+![WordCloud](wordcloud.png)
+
+---
+
+### 📈 Sentiment Distribution
+This plot shows the distribution of sentiments (Positive, Negative, Neutral) generated using VADER, which were used to label data for training the models.
+
+![Sentiment Distribution](sentiment_distribution.png)
+
+---
+
+### 🧠 BiLSTM Model Output
+Below is a sample output from the **BiLSTM model**, which had the highest performance among the models evaluated. The model successfully predicts the sentiment label based on the review input.
+
+![BiLSTM Output](BILSTM.png)
+
+---
+
+### 🌐 Web Application Interface
+The trained model was deployed using **Flask** with an interactive web interface. Users can input a review and get real-time sentiment prediction.
+
+![Web Interface](images/web_interface.png)
+
   
