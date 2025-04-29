@@ -120,13 +120,13 @@ This plot shows the distribution of sentiments (Positive, Negative, Neutral) gen
 ### 🧠 BiLSTM Model Output
 Below is a sample output from the **BiLSTM model**, which had the highest performance among the models evaluated. The model successfully predicts the sentiment label based on the review input.
 
-![BiLSTM Output](bilstm.png)
+![BiLSTM Output](bilstm.jpg)
 
 ---
 
 ### 🌐 Web Application Interface
-The trained model was deployed using **Flask** with an interactive web interface. Users can input a review and get real-time sentiment prediction.
+The trained model was deployed using **Streamlit** with an interactive web interface. Banks can upload data and get sentiment classifications.
 
-![Web Interface](webinterface.png)
+![Web Interface](webinterface.jpg)
 
   
