@@ -26,14 +26,14 @@ For this project, I chose to use Python and key libraries like **NLTK**, **Tenso
 This dataset gives me a solid foundation to explore what users are saying, how they feel about their banking experience, and where mobile apps might be falling short.
 
 ---
+### 💡 Insights & Recommendations
 ### Key Insights
 1. Customer Sentiment Skews Negative
-- The overall sentiment distribution reveals that:
-  - Negative reviews dominate (4653)
-  - Followed by positive (3444)
-  - And a small portion are neutral (695)
-
-This suggests widespread user dissatisfaction across banking apps, a critical signal for bad customer experience.
+Out of 8,798 reviews:
+- 4,653 were negative
+- 3,444 were positive
+- Only 695 were neutral
+This shows that many users are having a frustrating experience with their banking apps, and they’re not holding back.
 
 2. Frequent Issues Highlighted in Negative Reviews
 - The negative sentiment word cloud highlights common frustrations:
@@ -53,6 +53,25 @@ This suggests widespread user dissatisfaction across banking apps, a critical si
   - Transaction reliability
   - Security and account management features
 - Notably, users also express gratitude with words like “thank,” “love,” and “awesome,” indicating that when the app works well, it builds strong loyalty.
+---
+### ✅ Recommendations
+Based on these insights, here are a few ways mobile banking apps can improve the user experience:
+1. Prioritize Stability and Performance
+- Regularly test and monitor app updates to avoid crashes and bugs.
+- Invest in better load handling and bug fixing before release.
+2. Improve Login and Security UX
+- Make authentication more reliable and seamless.
+- Offer clear error messages and easy ways to reset or recover login credentials.
+3. Enhance Customer Support Integration
+- Integrate in-app support or chatbots to respond to user issues faster.
+- Respond to reviews — especially negative ones — to show customers their voices matter.
+4. Leverage Positive Feedback for Feature Development
+- Double down on what users love: convenience, transaction reliability, and security.
+- Use positive reviews as a guide to what should be emphasized or retained in future updates.
+5. Prioritize real time Monitoring of Sentiments Continuously
+- Set up sentiment tracking tools to stay ahead of user frustration.
+- Identify patterns early and act before issues snowball into churn.
+
 ---
 ## Methodology
 You might be wondering — how did I come up with these insights?
@@ -129,7 +148,7 @@ Here’s what the function did:
 - Removed user mentions, hashtags, URLs, punctuation, emojis, and stopwords
 - Stripped away extra spaces and newline characters
 
-This step made sure that the text was clean, simple, and ready for sentiment analysis — without all the noisy distractions.
+This step made sure that the text was clean, simple, and ready for sentiment analysis — without all the noisy distractions. The code is shown below.
 
 ```
 def preprocess_text(text):
@@ -180,6 +199,7 @@ def preprocess_text(text):
     return text
 ```
 ---
+
 
 
 
@@ -262,6 +282,7 @@ The trained model was deployed using **Streamlit** with an interactive web inter
 ![Web Interface](webinterface.jpg)
 
   
+
 
 
 
