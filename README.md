@@ -11,6 +11,7 @@ For this project, I’m stepping into the role of a data analyst working with a 
 - What are customers complaining about most?
 - Are there trends in negative feedback that could predict churn?
 - Are there insights that could help improve the mobile banking experience?
+
 By applying **Natural Language Processing (NLP)** techniques and sentiment analysis, this project aims to turn raw customer voices into **actionable business insights** that can help financial institutions improve **user experience**, **reduce churn**, and build stronger digital trust.
 
 ## 🎯 Objectives
@@ -138,4 +139,5 @@ The trained model was deployed using **Streamlit** with an interactive web inter
 ![Web Interface](webinterface.jpg)
 
   
+
 
