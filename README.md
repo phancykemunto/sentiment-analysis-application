@@ -205,7 +205,7 @@ Once the data was clean, I spent some time just getting to know it. Think of EDA
 Here’s what I explored:
 - **Star Rating Distribution:**
 I looked at how users rated the apps from 1 to 5 stars. The distribution showed a strong polarity — lots of 1-star and 5-star reviews, with fewer in the middle. This hinted at extreme user experiences: people either loved or hated the apps.
-![App Rating Distribution](rating_distribution.png)
+![Star Rating Distribution](ratingdistribution.png)
 
 
 ### 🧪 Code Snippet
@@ -286,6 +286,7 @@ The trained model was deployed using **Streamlit** with an interactive web inter
 ![Web Interface](webinterface.jpg)
 
   
+
 
 
 
