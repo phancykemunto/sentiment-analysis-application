@@ -66,7 +66,7 @@ One of the first things I did was check for missing values:
 ```Python
 # Check null values
 data.isnull().sum()
-
+```
 
 This gave me the following result below:
 App_Name               0  
@@ -83,7 +83,7 @@ Star_rating            6
 Helpful             4904  
 Comments               0  
 Developer_Reply     3099  
-
+```
 
 ### 1. **Feature Extraction:**
 - `FastText`
@@ -194,6 +194,7 @@ The trained model was deployed using **Streamlit** with an interactive web inter
 ![Web Interface](webinterface.jpg)
 
   
+
 
 
 
