@@ -54,6 +54,37 @@ This suggests widespread user dissatisfaction across banking apps, a critical si
   - Security and account management features
 - Notably, users also express gratitude with words like “thank,” “love,” and “awesome,” indicating that when the app works well, it builds strong loyalty.
 ---
+## Methodology
+You might be wondering — how did I come up with these insights?
+
+Well, let me walk you through the process I followed to clean the data, analyze the sentiments, and visualize the results. Step by step, I was able to turn thousands of raw reviews into something meaningful.
+
+### Step 1: **Data Cleaning – Making Sense of the Mess**
+Curious how I got started? Well, before diving into any analysis, I had to roll up my sleeves and clean the data. And let’s be honest — real-world data is never clean!
+
+One of the first things I did was check for missing values:
+```Python
+# Check null values
+data.isnull().sum()
+
+```Python
+This gave me the following result below:
+App_Name               0  
+Company_Name           0  
+Page_URL               0  
+Official_website       0  
+Email                  0  
+Address             7659  
+Privacy_policy         0  
+Name                   0  
+Time                   0  
+Year                 569  
+Star_rating            6  
+Helpful             4904  
+Comments               0  
+Developer_Reply     3099  
+
+
 ### 1. **Feature Extraction:**
 - `FastText`
 - `Word2Vec`
@@ -163,6 +194,7 @@ The trained model was deployed using **Streamlit** with an interactive web inter
 ![Web Interface](webinterface.jpg)
 
   
+
 
 
 
