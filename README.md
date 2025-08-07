@@ -14,21 +14,16 @@ For this project, I’m stepping into the role of a data analyst working with a 
 
 By applying **Natural Language Processing (NLP)** techniques and sentiment analysis, this project aims to turn raw customer voices into **actionable business insights** that can help financial institutions improve **user experience**, **reduce churn**, and build stronger digital trust.
 
-## 🎯 Objectives
-
-- To preprocess and analyze mobile banking app user reviews.
-- To analyse the drivers of sentiments by users of mobile banking applications.
-- To build and compare deep learning models (RNN, LSTM, Bi-LSTM) for sentiment classification.
-- To evaluate the effectiveness of different word embedding techniques (FastText, Word2Vec, GloVe).
-- To validate polarity using VADER as a rule-based sentiment reference.
-
 ---
 ## 📊 Dataset
 
-- **Source**: Publicly available mobile banking app reviews (Play Store)
-- **Content**: User comments, ratings, timestamps, Developer reply
-- **Preprocessing**: Cleaning, tokenization, stopword removal, padding, balancing imbalanced data
-## 🧠 Methods & Models
+The dataset I’m using is sourced from Google play store and contains 8,798 rows and 14 columns. Each row represents user feedback on a mobile banking application, and each entry is tied to a specific banking app name — allowing for a comparison of user experiences across different financial institutions.
+
+The columns in the dataset include a mix of textual data (like comments), ratings, developer reply and categorical variables such as the app name, review date, and version. These data points are ideal for sentiment analysis, topic modeling, and uncovering patterns in customer satisfaction or dissatisfaction.
+
+For this project, I chose to use Python and key libraries like **NLTK**, **Tensorflow**, and **scikit-learn** for text preprocessing and analysis. Before diving into the modeling, I had to go through a rigorous data cleaning phase — handling missing values, dropping unecessary columns, coverting text to lower case, removing hashtags and normalizing the text for better sentiment interpretation.
+
+This dataset gives me a solid foundation to explore what users are saying, how they feel about their banking experience, and where mobile apps might be falling short.
 
 ### 1. **Feature Extraction:**
 - `FastText`
@@ -139,5 +134,6 @@ The trained model was deployed using **Streamlit** with an interactive web inter
 ![Web Interface](webinterface.jpg)
 
   
+
 
 
