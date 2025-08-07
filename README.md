@@ -25,6 +25,35 @@ For this project, I chose to use Python and key libraries like **NLTK**, **Tenso
 
 This dataset gives me a solid foundation to explore what users are saying, how they feel about their banking experience, and where mobile apps might be falling short.
 
+---
+### Key Insights
+1. Customer Sentiment Skews Negative
+- The overall sentiment distribution reveals that:
+  - Negative reviews dominate (4653)
+  - Followed by positive (3444)
+  - And a small portion are neutral (695)
+
+This suggests widespread user dissatisfaction across banking apps, a critical signal for bad customer experience.
+
+2. Frequent Issues Highlighted in Negative Reviews
+- The negative sentiment word cloud highlights common frustrations:
+- Words like **“can’t,”** **“update,”** **“login,”** **“error,”** **“time,”** **“problem,”** and **“frustrating”** appear frequently.
+- Users are mainly struggling with:
+  - App crashes or failed updates
+  - Login and authentication issues
+  - Delayed or failed transactions
+  - Poor customer service and response times
+  - Phrases like “still not working,” “can’t access,” and “help please” suggest a lack of technical reliability and user support.
+
+3. Positive Feedback Centers Around Functionality and Convenience
+- The positive sentiment word cloud shows terms like:
+  - **“good,”** **“excellent,”** **“easy,”** **“convenient,”** **“secure,”** **“service,”** **“transaction,”** and **“efficient”**
+- Positive reviewers appreciate:
+  - Ease of use
+  - Transaction reliability
+  - Security and account management features
+- Notably, users also express gratitude with words like “thank,” “love,” and “awesome,” indicating that when the app works well, it builds strong loyalty.
+---
 ### 1. **Feature Extraction:**
 - `FastText`
 - `Word2Vec`
@@ -134,6 +163,7 @@ The trained model was deployed using **Streamlit** with an interactive web inter
 ![Web Interface](webinterface.jpg)
 
   
+
 
 
 
