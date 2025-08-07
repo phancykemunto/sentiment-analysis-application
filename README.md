@@ -67,7 +67,7 @@ One of the first things I did was check for missing values:
 # Check null values
 data.isnull().sum()
 
-```Python
+
 This gave me the following result below:
 App_Name               0  
 Company_Name           0  
@@ -194,6 +194,7 @@ The trained model was deployed using **Streamlit** with an interactive web inter
 ![Web Interface](webinterface.jpg)
 
   
+
 
 
 
