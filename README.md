@@ -84,6 +84,33 @@ Comments               0
 Developer_Reply     3099  
 
 ```
+Handling Missing Values
+After identifying which columns had missing values, the next step was figuring out what to do with them. Not all missing data needs to be deleted — sometimes, we can make smart assumptions to fill in the blanks. Here's how I handled it:
+```Python
+
+df["Year"] = df["Year"].fillna(df["Year"].mode()[0])  
+df["Helpful"] = df["Helpful"].fillna(0)  # Assume missing means no helpful votes
+df["Developer_Reply"] = df["Developer_Reply"].fillna("No Reply")  # Replace missing replies with "No Reply"
+
+# Drop rows where 'Star_rating' is missing 
+df = df.dropna(subset=["Star_rating"])
+
+# Verify missing values
+print(df.isnull().sum())
+
+This was the output
+App_Name           0
+Company_Name       0
+Time               0
+Year               0
+Star_rating        0
+Helpful            0
+Comments           0
+Developer_Reply    0
+dtype: int64
+
+```
+
 
 ### 1. **Feature Extraction:**
 - `FastText`
@@ -194,6 +221,7 @@ The trained model was deployed using **Streamlit** with an interactive web inter
 ![Web Interface](webinterface.jpg)
 
   
+
 
 
 
