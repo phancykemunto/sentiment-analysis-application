@@ -208,35 +208,7 @@ I looked at how users rated the apps from 1 to 5 stars. The distribution showed 
 ![Star Rating Distribution](ratingdistribution.png)
 
 
-### 🧪 Code Snippet
-
-```python
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-
-analyzer = SentimentIntensityAnalyzer()
-
-def get_sentiment_label(text):
-    score = analyzer.polarity_scores(text)['compound']
-    if score >= 0.05:
-        return 'Positive'
-    elif score <= -0.05:
-        return 'Negative'
-    else:
-        return 'Neutral'
-
-```python
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-
-analyzer = SentimentIntensityAnalyzer()
-text = "This app is amazing and super user-friendly!"
-score = analyzer.polarity_scores(text)
-print(score)
-# Output: {'neg': 0.0, 'neu': 0.254, 'pos': 0.746, 'compound': 0.8519} 
----
-
-``` 
-
-## ⚙️ Tools & Technologies
+## ⚙️ Tools & Technologies Used
 
 - Python (Jupyter Notebook, VS Code)
 - TensorFlow / Keras
@@ -246,14 +218,6 @@ print(score)
 - Google Colab (for model training)
 - Git & GitHub (version control)
 
----
-
-## 📈 Results & Key Findings
-
-- **Bi-LSTM** performed best with an accuracy of **78%** using **GloVe embeddings**.
-- **FastText** offered better performance on low-frequency words.
-- VADER scores correlated highly with Bi-LSTM predictions, validating model output consistency.
-- User concerns centered around **app crashes**, **transaction failures**, and **user interface** issues.
 
 ---
 
@@ -286,6 +250,7 @@ The trained model was deployed using **Streamlit** with an interactive web inter
 ![Web Interface](webinterface.jpg)
 
   
+
 
 
 
